@@ -19,7 +19,7 @@ function user_input() {
          buttonsContainer.appendChild(button);
       }
       if (buttons_amount > 0) {
-         randomNumber = Math.floor(Math.random() * buttons_amount) + 3;
+         randomNumber = Math.floor(Math.random() * buttons_amount) + 4;
       }
    }
 }
