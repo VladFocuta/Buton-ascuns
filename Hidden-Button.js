@@ -18,14 +18,16 @@ function user_input() {
          button.onclick = winner_or_not;
          buttonsContainer.appendChild(button);
       }
-      randomNumberGenerator = Math.floor(Math.random() * buttons_amount) + 4;
+      if (buttons_amount > 0) {
+         randomNumber = Math.floor(Math.random() * buttons_amount) + 3;
+      }
    }
 }
 
 function winner_or_not(e) {
    let clickedButton = e.target;
    let clickedButtonNumber = parseInt(clickedButton.id.replace("button", ""));
-   if ((clickedButtonNumber === randomNumber && clickedButtonNumber <= 3) || (clickedButtonNumber > 3 && clickedButtonNumber === randomNumberGenerator)) {
+   if (clickedButtonNumber === randomNumber) {
       alert("castigator");
    } else {
       alert("necastigator");
