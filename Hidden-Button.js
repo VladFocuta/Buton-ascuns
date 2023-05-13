@@ -7,7 +7,7 @@ function genRandomNumber() {
 
 let buttonsAmount, count = 3;
 
-function getButtons() {
+function generateButtons() {
    buttonsAmount = prompt("Enter the amount of buttons that you need");
    if (buttonsAmount != null) {
       let buttonsContainer = document.getElementById("buttonsContainer");
